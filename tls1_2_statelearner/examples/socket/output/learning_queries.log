@@ -1,0 +1,28 @@
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [ε | A / ε | C]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [ε | B / ε | E]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [A | A / C | C]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [A | B / C | E]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B | A / E | D]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B | B / E | E]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B A | A / E D | D]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B A | B / E D | E]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B B | A / E E | C]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B B | B / E E | E]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [ε | A / ε | C]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [ε | B / ε | E]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B | A / E | D]
+Jun 03, 2024 10:24:54 PM de.learnlib.logging.LearnLogger logQuery
+INFO: [B | B / E | E]

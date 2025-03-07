@@ -1,0 +1,34 @@
+digraph g {
+__start0 [label="" shape="none"];
+
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s2 [shape="circle" label="2"];
+	s3 [shape="circle" label="3"];
+	s4 [shape="circle" label="4"];
+	s5 [shape="circle" label="5"];
+	s6 [shape="circle" label="6"];
+	s7 [shape="circle" label="7"];
+	s8 [shape="circle" label="8"];
+	s0 -> s1 [label="ClientHello / ServerHello,ChangeCipherSpec,EncryptedExtensions,CertificateRequest,Certificate,CertificateVerify,Finished,"];
+	s0 -> s2 [label="ChangeCipherSpec / Empty,"];
+	s0 -> s3 [label="~ / ConnectionClosed"];
+	s0 -> s0 [label="ClientCertificateVerify / "];
+	s1 -> s3 [label="~ / ConnectionClosed"];
+	s1 -> s4 [label="ChangeCipherSpec / Empty,"];
+	s2 -> s3 [label="~ / ConnectionClosed"];
+	s2 -> s2 [label="ClientCertificateVerify / "];
+	s3 -> s3 [label="~ / ConnectionClosed"];
+	s4 -> s3 [label="~ / ConnectionClosed"];
+	s4 -> s5 [label="Certificate / Empty,"];
+	s5 -> s3 [label="~ / ConnectionClosed"];
+	s5 -> s6 [label="ClientCertificateVerify / Empty,"];
+	s6 -> s3 [label="~ / ConnectionClosed"];
+	s6 -> s7 [label="Finished / NewSessionTicket,NewSessionTicket,"];
+	s7 -> s3 [label="~ / ConnectionClosed"];
+	s7 -> s8 [label="ApplicationData / Empty,"];
+	s8 -> s3 [label="~ / ConnectionClosed"];
+	s8 -> s8 [label="ApplicationData / Empty,"];
+
+__start0 -> s0;
+}

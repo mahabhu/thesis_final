@@ -1,0 +1,10 @@
+Jun 19, 2024 3:26:59 PM nl.cypherpunk.statelearner.Learner <init>
+INFO: Using TLS SUL
+Jun 19, 2024 3:26:59 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Using learning algorithm ExtensibleLStarMealy
+Jun 19, 2024 3:26:59 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Using equivalence algorithm MealyModifiedWMethodEQOracle
+Jun 19, 2024 3:26:59 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Starting learning
+Jun 19, 2024 3:26:59 PM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 1

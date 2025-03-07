@@ -1,0 +1,29 @@
+Sep 28, 2024 8:50:16 AM nl.cypherpunk.statelearner.Learner <init>
+INFO: Using TLS SUL
+Sep 28, 2024 8:50:16 AM nl.cypherpunk.statelearner.Learner learn
+INFO: Using learning algorithm ExtensibleLStarMealy
+Sep 28, 2024 8:50:16 AM nl.cypherpunk.statelearner.Learner learn
+INFO: Using equivalence algorithm MealyModifiedWMethodEQOracle
+Sep 28, 2024 8:50:16 AM nl.cypherpunk.statelearner.Learner learn
+INFO: Starting learning
+Sep 28, 2024 8:50:16 AM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 1
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: -------------------------------------------------------
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: Learning [ms]: 131866, (131.866 s)
+Searching for counter-example [ms]: 40160, (40.16 s)
+Total time [ms]: 172123, (172.123 s)
+
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: Rounds []: 1
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: membership queries to SUL [queries]: 819
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: membership queries to cache [queries]: 819
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: equivalence queries to SUL [queries]: 198
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: equivalence queries to cache [queries]: 198
+Sep 28, 2024 8:53:08 AM nl.cypherpunk.statelearner.Learner learn
+INFO: States in final hypothesis: 9

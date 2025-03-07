@@ -1,0 +1,33 @@
+Sep 11, 2024 9:28:51 PM nl.cypherpunk.statelearner.Learner <init>
+INFO: Using TLS SUL
+Sep 11, 2024 9:28:51 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Using learning algorithm ExtensibleLStarMealy
+Sep 11, 2024 9:28:51 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Using equivalence algorithm MealyModifiedWMethodEQOracle
+Sep 11, 2024 9:28:51 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Starting learning
+Sep 11, 2024 9:28:51 PM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 1
+Sep 11, 2024 9:33:26 PM de.learnlib.logging.LearnLogger logCounterexample
+INFO: Counter-example found: Query[ε|ServerHelloDHE ServerCertificate CertificateRequest / Empty Empty Alert,2.10ConnectionClosed]
+Sep 11, 2024 9:33:26 PM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 2
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: -------------------------------------------------------
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Learning [ms]: 407156, (407.156 s)
+Searching for counter-example [ms]: 255566, (255.566 s)
+Total time [ms]: 662839, (662.839 s)
+
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Rounds []: 2
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: membership queries to SUL [queries]: 1000
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: membership queries to cache [queries]: 1000
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: equivalence queries to SUL [queries]: 467
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: equivalence queries to cache [queries]: 467
+Sep 11, 2024 9:39:54 PM nl.cypherpunk.statelearner.Learner learn
+INFO: States in final hypothesis: 9

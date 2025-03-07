@@ -1,0 +1,34 @@
+depth=0 C = NL, ST = Some-State, O = RU, OU = Server Dpt, CN = localhost
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = NL, ST = Some-State, O = RU, OU = Server Dpt, CN = localhost
+verify error:num=21:unable to verify the first certificate
+verify return:1
+140161406087552:error:1409E0E5:SSL routines:ssl3_write_bytes:ssl handshake failure:s3_pkt.c:659:
+---
+Certificate chain
+ 0 s:/C=NL/ST=Some-State/O=RU/OU=Server Dpt/CN=localhost
+   i:/C=NL/ST=Some-State/O=RU/OU=DS/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDIjCCAgqgAwIBAgIJAPDGSgFLHN1NMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNV
+BAYTAk5MMRMwEQYDVQQIDApTb21lLVN0YXRlMQswCQYDVQQKDAJSVTELMAkGA1UE
+CwwCRFMxEjAQBgNVBAMMCWxvY2FsaG9zdDAeFw0xNTAxMjQxNzE3NTZaFw0xNjAx
+MjQxNzE3NTZaMFgxCzAJBgNVBAYTAk5MMRMwEQYDVQQIDApTb21lLVN0YXRlMQsw
+CQYDVQQKDAJSVTETMBEGA1UECwwKU2VydmVyIERwdDESMBAGA1UEAwwJbG9jYWxo
+b3N0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEGop8jRoxDFgZiZGcwa9w
+5XjaWxlBnztKzjyOrpKA+ur1C+93PtEeYxiRHR44bcS3s9SUqr2gadRIruDzflUk
+T3rBygX3EGVzOReol6eZ2c9l6OrdaVm51/lk7vpZ/OSljjKTyqywZxgviCGfYnhM
+3kgd0wuZCpkFmRUGyrZOCwIDAQABo3sweTAJBgNVHRMEAjAAMCwGCWCGSAGG+EIB
+DQQfFh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUfUVc
+IZzzqwYSBfevNbyumkbKj9MwHwYDVR0jBBgwFoAUbncL+8u12B/yHvRWLgJUL1Kc
+1UEwDQYJKoZIhvcNAQELBQADggEBAH7QWQEvvaJamNSPbMiAanjPb/SUpvSbdXdP
+mR5IUmCFRKv+6f+Bdl6CBqiUBe/zn606uyWpdl/cpUkt2YG1tbRRG8juIeF39oWI
+hKQc+Azg5cgwNq25OfXH/i4SYytiXLNgBkOjoD3BZEXZpkgng5kgx/CS7SJ544bQ
+vaDk9B1i+pJJwApak76t3otKVMdfWGZbZSHit9mt06vKysDmQBOnYFOtVJyQdx8A
+WKqvbguesPdelzB0bpneW7JPR0hPJr+YPQaMc5gLyR6jZ80vyVuGKH+QjUe+qmZc
+n3N2LOmaBLZnwHywD8TmB9/gidx2chpHWf17JC9dNVUSzyvarFg=
+-----END CERTIFICATE-----
+subject=/C=NL/ST=Some-State/O=RU/OU=Server Dpt/CN=localhost
+issuer=/C=NL/ST=Some-State/O=RU/OU=DS/CN=localhost

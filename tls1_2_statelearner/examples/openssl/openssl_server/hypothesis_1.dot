@@ -1,0 +1,24 @@
+digraph g {
+__start0 [label="" shape="none"];
+
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s0 -> s1 [label="ClientHelloRSA / Alert,2.80ConnectionClosed"];
+	s0 -> s1 [label="ClientHelloDHE / Alert,2.80ConnectionClosed"];
+	s0 -> s1 [label="ClientKeyExchange / Alert,2.10ConnectionClosed"];
+	s0 -> s1 [label="ChangeCipherSpec / Alert,2.10ConnectionClosed"];
+	s0 -> s1 [label="Finished / Alert,2.10ConnectionClosed"];
+	s0 -> s1 [label="ApplicationData / Alert,2.10ConnectionClosed"];
+	s0 -> s1 [label="HeartbeatRequest / Alert,2.10ConnectionClosed"];
+	s0 -> s1 [label="HeartbeatResponse / Alert,2.10ConnectionClosed"];
+	s1 -> s1 [label="ClientHelloRSA / ConnectionClosed"];
+	s1 -> s1 [label="ClientHelloDHE / ConnectionClosed"];
+	s1 -> s1 [label="ClientKeyExchange / ConnectionClosed"];
+	s1 -> s1 [label="ChangeCipherSpec / ConnectionClosed"];
+	s1 -> s1 [label="Finished / ConnectionClosed"];
+	s1 -> s1 [label="ApplicationData / ConnectionClosed"];
+	s1 -> s1 [label="HeartbeatRequest / ConnectionClosed"];
+	s1 -> s1 [label="HeartbeatResponse / ConnectionClosed"];
+
+__start0 -> s0;
+}

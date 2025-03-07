@@ -1,0 +1,18 @@
+Aug 31, 2024 10:12:01 PM nl.cypherpunk.statelearner.Learner <init>
+INFO: Using TLS1.3 SUL
+Aug 31, 2024 10:12:06 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Using learning algorithm ExtensibleLStarMealy
+Aug 31, 2024 10:12:06 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Using equivalence algorithm MealyModifiedWMethodEQOracle
+Aug 31, 2024 10:12:06 PM nl.cypherpunk.statelearner.Learner learn
+INFO: Starting learning
+Aug 31, 2024 10:12:06 PM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 1
+Aug 31, 2024 10:40:24 PM de.learnlib.logging.LearnLogger logCounterexample
+INFO: Counter-example found: Query[ε|ServerHello ChangeCipherSpec EncryptedExtensions CertificateRequest Certificate ServerCertificateVerify Finished / Empty, Empty, Empty, Empty, Empty, Empty, ChangeCipherSpec,Certificate,CertificateVerify,Finished,]
+Aug 31, 2024 10:40:24 PM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 2
+Aug 31, 2024 11:27:46 PM de.learnlib.logging.LearnLogger logCounterexample
+INFO: Counter-example found: Query[ε|ServerHello ChangeCipherSpec EncryptedExtensions CertificateRequest Certificate ServerCertificateVerify ApplicationData ServerCertificateVerify / Empty, Empty, Empty, Empty, Empty, Empty, ConnectionClosed ConnectionClosed]
+Aug 31, 2024 11:27:46 PM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 3

@@ -1,0 +1,34 @@
+Client                       Server
+-----------------------------------
+  |                             |
+ClientHello-------------------->|
+  |                             |
+  |<-------------------------ServerHello
+  |                             |
+  |<-------------------------ServerChangeCipherSpec
+  |                             |
+  |<-------------------------ServerEncryptedExtensions
+  |                             |
+  |<-------------------------CertificateRequest
+  |                             |
+  |<-------------------------ServerCertificate
+  |                             |
+  |<-------------------------ServerCertificateVerify
+  |                             |
+  |<-------------------------ServerFinished
+  |                             |
+ClientChangeCipherSpec--------->|
+  |                             |
+ClientCertificate-------------->|
+  |                             |
+ClientCertificateVerify-------->|
+  |                             |
+ClientFinished----------------->|
+  |                             |
+  |<-------------------------NewSessionTickets
+  |                             |
+ApplicationData---------------->|
+  |                             |
+  |<-------------------------ApplicationData
+  |                             |
+

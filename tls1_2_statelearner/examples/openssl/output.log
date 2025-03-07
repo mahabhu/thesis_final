@@ -1,0 +1,25 @@
+Using default temp DH parameters
+ACCEPT
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:322:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:322:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
+809B00AE717F0000:error:0A000076:SSL routines:tls_choose_sigalg:no suitable signature algorithm:../ssl/t1_lib.c:3340:
