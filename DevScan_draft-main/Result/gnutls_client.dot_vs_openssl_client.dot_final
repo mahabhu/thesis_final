@@ -1,0 +1,32 @@
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ApplicationData
+Output 1: Alert10
+Output 2: ConnectionClosed
+[ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData Alert10] [ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationDataAlert10ConnectionClosed ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ApplicationData
+Output 1: Empty
+Output 2: ConnectionClosed
+[ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData Alert10 Empty] [ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationDataAlert10ConnectionClosed ConnectionClosed ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: Finished
+Output 1: ApplicationData
+Output 2: ApplicationDataAlert10ConnectionClosed
+[ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData] [ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationDataAlert10ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDone
+Output 1: CertificateClientKeyExchangeCertificateVerifyChangeCipherSpecFinished
+Output 2: CertificateEmptyClientKeyExchangeChangeCipherSpecFinished
+[ServerHelloRSA ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Empty CertificateClientKeyExchangeCertificateVerifyChangeCipherSpecFinished] [ServerHelloRSA ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Empty CertificateEmptyClientKeyExchangeChangeCipherSpecFinished]
+
+
+
+
+
+
+
+

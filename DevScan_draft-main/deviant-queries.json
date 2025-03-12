@@ -1,0 +1,187 @@
+{
+  "traces": [
+    //openssl con closed
+    {
+      "input_symbols": "['ServerHelloRSA', 'ServerCertificate', 'ServerHelloDone', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationData', 'Alert10']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationData', 'Empty']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloRSA', 'ServerCertificate', 'ServerHelloDone', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationData', 'Alert10', 'Empty']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationData', 'Empty', 'Empty']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloRSA', 'ServerCertificate', 'ServerHelloDone', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationData']",
+          "devices": "['gnutls_client', 'jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'ClientKeyExchangeChangeCipherSpecFinished', 'Empty', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    // idk maybe
+    {
+      "input_symbols": "['ServerHelloRSA', 'ServerCertificate', 'CertificateRequest', 'ServerHelloDone']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'Empty', 'CertificateClientKeyExchangeCertificateVerifyChangeCipherSpecFinished']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Empty', 'CertificateEmptyClientKeyExchangeChangeCipherSpecFinished']",
+          "devices": "['jsse_client', 'openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloRSA', 'ServerHelloDone']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert247ConnectionClosed']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert210ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloDHE', 'ServerCertificate', 'CertificateRequest', 'ServerHelloDone']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Empty', 'CertificateEmptyAlert240ConnectionClosed']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    jsse sus?
+    {
+      "input_symbols": "['ServerHelloDHE', 'ServerCertificate', 'CertificateRequest']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Empty']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    // loop??
+    {
+      "input_symbols": "['CertificateRequest']",
+      "outputs": [
+        {
+          "output_symbols": "['ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['ClientHelloTLSv12Alert210ConnectionClosed']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloDHE', 'ServerKeyExchange']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert240ConnectionClosed']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert210ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloDHE', 'ServerCertificate', 'CertificateRequest', 'ServerHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ServerHelloDHE', 'ServerCertificate', 'CertificateRequest', 'ServerHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['Empty', 'Empty', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_client']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_client']"
+        }
+      ]
+    }
+  ]
+}

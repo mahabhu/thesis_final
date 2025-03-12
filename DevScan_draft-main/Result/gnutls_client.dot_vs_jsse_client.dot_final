@@ -1,0 +1,48 @@
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ApplicationData
+Output 1: Alert10
+Output 2: Empty
+[ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData Alert10] [ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData Empty]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDone
+Output 1: ConnectionClosed
+Output 2: Alert247ConnectionClosed
+[ServerHelloRSA ServerHelloDone / Empty ConnectionClosed] [ServerHelloRSA ServerHelloDone / Empty Alert247ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDone
+Output 1: ConnectionClosed
+Output 2: CertificateEmptyAlert240ConnectionClosed
+[ServerHelloDHE ServerCertificate CertificateRequest ServerHelloDone / Empty Empty ConnectionClosed ConnectionClosed] [ServerHelloDHE ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Empty CertificateEmptyAlert240ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDone
+Output 1: CertificateClientKeyExchangeCertificateVerifyChangeCipherSpecFinished
+Output 2: CertificateEmptyClientKeyExchangeChangeCipherSpecFinished
+[ServerHelloRSA ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Empty CertificateClientKeyExchangeCertificateVerifyChangeCipherSpecFinished] [ServerHelloRSA ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Empty CertificateEmptyClientKeyExchangeChangeCipherSpecFinished]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: CertificateRequest
+Output 1: ConnectionClosed
+Output 2: Empty
+[ServerHelloDHE ServerCertificate CertificateRequest / Empty Empty ConnectionClosed] [ServerHelloDHE ServerCertificate CertificateRequest / Empty Empty Empty]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: CertificateRequest
+Output 1: ConnectionClosed
+Output 2: ClientHelloTLSv12Alert210ConnectionClosed
+[ CertificateRequest /  ConnectionClosed] [ CertificateRequest /  ClientHelloTLSv12Alert210ConnectionClosed]
+
+
+
+
+
+
+
+
+
+
+
+

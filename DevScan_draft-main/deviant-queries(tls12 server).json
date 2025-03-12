@@ -1,0 +1,1647 @@
+{
+  "traces": [
+    {
+      "input_symbols": "['Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed']",
+          "devices": "['mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert280ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed']",
+          "devices": "['mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert280ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100', 'Alert10ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100', 'Alert10ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }client
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloRSA', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ChangeCipherSpec', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert210ConnectionClosed']",
+          "devices": "['mbedtls_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    // sus
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 
+                          'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Empty']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 
+                            'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 
+                          'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 
+                          'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationDataEmpty', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'Empty']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'Empty']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationData', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'ApplicationDataApplicationData', 'Empty']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationDataEmpty', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'Empty']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'Empty']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    //sus
+    {
+      "input_symbols": "['ClientHelloDHE', 'ApplicationDataEmpty', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationDataEmpty',
+                         'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 
+                              'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 
+                            'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone',
+                             'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 
+                            'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ChangeCipherSpec', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert210ConnectionClosed']",
+          "devices": "['mbedtls_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationDataEmpty', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Empty', 'ApplicationDataApplicationData']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'ApplicationDataApplicationData']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'ApplicationDataApplicationData']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationDataEmpty', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'ApplicationDataApplicationData']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Empty', 'ApplicationDataConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    //sus
+    {
+      "input_symbols": "['ChangeCipherSpec']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['Empty']",
+          "devices": "['mbedtls_server', 'gnutls_server', 'openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    //sus
+    {
+      "input_symbols": "['ClientHelloRSA', 'EmptyCertificate', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 
+          'Alert280ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'EmptyCertificate', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert280ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert280ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert280ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty', 'Finished', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+     // sus,empty cert
+    {
+      "input_symbols": "['ClientHelloRSA', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 
+                              'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 
+                              'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 
+                              'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    //sus
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 
+                            'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 
+                            'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 
+                              'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloRSA', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ChangeCipherSpec', 'ChangeCipherSpec']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'Alert210ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone']",
+          "devices": "['jsse_server', 'mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty', 'Finished', 'ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    //sus
+    {
+      "input_symbols": "['ClientHelloRSA', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 
+          'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 
+                      'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone',
+                 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone']",
+          "devices": "['jsse_server', 'mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      // sus
+      "input_symbols": "['ApplicationDataEmpty', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['Empty', 'Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    //sus
+    {
+      "input_symbols": "['ClientHelloRSA', 'ApplicationDataEmpty', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 
+                            'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'ClientKeyExchange', 'ApplicationDataEmpty', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ApplicationDataEmpty', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ChangeCipherSpec', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientKeyExchange']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'EmptyCertificate']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloRSA', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloRSA', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'Finished', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty', 'Finished', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'Alert10', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert10ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert280ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100', 'ApplicationDataAlert10ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'EmptyCertificate', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'Alert10']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Alert10ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'ConnectionClosed']",
+          "devices": "['mbedtls_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ApplicationData', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataApplicationData', 'Empty']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataAlert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ApplicationDataEmpty', 'ChangeCipherSpec', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'ApplicationDataConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['EmptyCertificate']",
+      "outputs": [
+        {
+          "output_symbols": "['Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server', 'gnutls_server']"
+        },
+        {
+          "output_symbols": "['ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ApplicationDataEmpty', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Empty', 'Empty', 'Empty']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloDHE', 'ApplicationDataEmpty']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert210ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert1100', 'Empty']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240Alert10ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Empty', 'Empty', 'ChangeCipherSpecHandshakeFinished', 'Alert240ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['openssl_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'ApplicationDataEmpty', 'Finished', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'ClientHelloDHE', 'ClientKeyExchange', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA', 'ApplicationData']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloDHE', 'EmptyCertificate']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'Alert210ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeServerHelloDone', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerKeyExchangeHandshakeCertificateRequestHandshakeServerHelloDone', 'Empty']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    },
+    {
+      "input_symbols": "['ClientHelloRSA', 'ClientHelloRSA', 'ClientKeyExchange', 'ApplicationDataEmpty', 'ChangeCipherSpec', 'Finished', 'ClientHelloRSA']",
+      "outputs": [
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['jsse_server', 'openssl_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeServerHelloDone', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['mbedtls_server']"
+        },
+        {
+          "output_symbols": "['HandshakeServerHelloTLSv12HandshakeCertificateHandshakeCertificateRequestHandshakeServerHelloDone', 'Alert210ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed', 'ConnectionClosed']",
+          "devices": "['gnutls_server']"
+        }
+      ]
+    }
+  ]
+}

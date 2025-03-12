@@ -1,0 +1,70 @@
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ApplicationData
+Output 1: Empty
+Output 2: ConnectionClosed
+[ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData Empty] [ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished ApplicationData / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationDataAlert10ConnectionClosed ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: Finished
+Output 1: ApplicationData
+Output 2: ApplicationDataAlert10ConnectionClosed
+[ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationData] [ServerHelloRSA ServerCertificate ServerHelloDone ChangeCipherSpec Finished / Empty Empty ClientKeyExchangeChangeCipherSpecFinished Empty ApplicationDataAlert10ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDone
+Output 1: Alert247ConnectionClosed
+Output 2: Alert210ConnectionClosed
+[ServerHelloRSA ServerHelloDone / Empty Alert247ConnectionClosed] [ServerHelloRSA ServerHelloDone / Empty Alert210ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDone
+Output 1: CertificateEmptyAlert240ConnectionClosed
+Output 2: ConnectionClosed
+[ServerHelloDHE ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Empty CertificateEmptyAlert240ConnectionClosed] [ServerHelloDHE ServerCertificate CertificateRequest ServerHelloDone / Empty Empty Alert210ConnectionClosed ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerKeyExchange
+Output 1: Alert240ConnectionClosed
+Output 2: Alert210ConnectionClosed
+[ServerHelloDHE ServerKeyExchange / Empty Alert240ConnectionClosed] [ServerHelloDHE ServerKeyExchange / Empty Alert210ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: CertificateRequest
+Output 1: ClientHelloTLSv12Alert210ConnectionClosed
+Output 2: Alert210ConnectionClosed
+[ CertificateRequest /  ClientHelloTLSv12Alert210ConnectionClosed] [ CertificateRequest /  Alert210ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: CertificateRequest
+Output 1: Empty
+Output 2: Alert210ConnectionClosed
+[ServerHelloDHE ServerCertificate CertificateRequest / Empty Empty Empty] [ServerHelloDHE ServerCertificate CertificateRequest / Empty Empty Alert210ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloDHE
+Output 1: Alert210ConnectionClosed
+Output 2: ConnectionClosed
+[ServerHelloDHE ServerCertificate CertificateRequest ServerHelloDHE / Empty Empty Empty Alert210ConnectionClosed] [ServerHelloDHE ServerCertificate CertificateRequest ServerHelloDHE / Empty Empty Alert210ConnectionClosed ConnectionClosed]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Input: ServerHelloRSA
+Output 1: Alert210ConnectionClosed
+Output 2: ConnectionClosed
+[ServerHelloDHE ServerCertificate CertificateRequest ServerHelloRSA / Empty Empty Empty Alert210ConnectionClosed] [ServerHelloDHE ServerCertificate CertificateRequest ServerHelloRSA / Empty Empty Alert210ConnectionClosed ConnectionClosed]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

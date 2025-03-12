@@ -1,0 +1,69 @@
+digraph g {
+__start0 [label="" shape="none"];
+
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s2 [shape="circle" label="2"];
+	s3 [shape="circle" label="3"];
+	s4 [shape="circle" label="4"];
+	s5 [shape="circle" label="5"];
+	s6 [shape="circle" label="6"];
+	s7 [shape="circle" label="7"];
+	s8 [shape="circle" label="8"];
+	s0 -> s1[label="ClientHello / ServerHelloChangeCipherSpecEncryptedExtensionsCertificateRequestCertificateCertificateVerifyFinished"]
+	s0 -> s2[label="ChangeCipherSpec / Empty"]
+	s0 -> s3[label="Finished / Alert210ConnectionClosed"]
+	s0 -> s3[label="Certificate / Alert210ConnectionClosed"]
+	s0 -> s0[label="ClientCertificateVerify / "]
+	s0 -> s3[label="ApplicationData / Alert210ConnectionClosed"]
+	s1 -> s3[label="ClientHello / Alert220ConnectionClosed"]
+	s1 -> s4[label="ChangeCipherSpec / Empty"]
+	s1 -> s3[label="Finished / Alert220ConnectionClosed"]
+	s1 -> s3[label="Certificate / Alert220ConnectionClosed"]
+	s1 -> s3[label="ClientCertificateVerify / Alert220ConnectionClosed"]
+	s1 -> s3[label="ApplicationData / Alert220ConnectionClosed"]
+	s2 -> s3[label="ClientHello / Alert210ConnectionClosed"]
+	s2 -> s3[label="ChangeCipherSpec / Alert210ConnectionClosed"]
+	s2 -> s3[label="Finished / Alert210ConnectionClosed"]
+	s2 -> s3[label="Certificate / Alert210ConnectionClosed"]
+	s2 -> s2[label="ClientCertificateVerify / "]
+	s2 -> s3[label="ApplicationData / Alert210ConnectionClosed"]
+	s3 -> s3[label="ClientHello / ConnectionClosed"]
+	s3 -> s3[label="ChangeCipherSpec / ConnectionClosed"]
+	s3 -> s3[label="Finished / ConnectionClosed"]
+	s3 -> s3[label="Certificate / ConnectionClosed"]
+	s3 -> s3[label="ClientCertificateVerify / ConnectionClosed"]
+	s3 -> s3[label="ApplicationData / ConnectionClosed"]
+	s4 -> s3[label="ClientHello / Alert220ConnectionClosed"]
+	s4 -> s3[label="ChangeCipherSpec / Alert210ConnectionClosed"]
+	s4 -> s3[label="Finished / Alert250ConnectionClosed"]
+	s4 -> s5[label="Certificate / Empty"]
+	s4 -> s3[label="ClientCertificateVerify / Alert250ConnectionClosed"]
+	s4 -> s3[label="ApplicationData / Alert210ConnectionClosed"]
+	s5 -> s3[label="ClientHello / Alert220ConnectionClosed"]
+	s5 -> s3[label="ChangeCipherSpec / Alert210ConnectionClosed"]
+	s5 -> s3[label="Finished / Alert210ConnectionClosed"]
+	s5 -> s3[label="Certificate / Alert210ConnectionClosed"]
+	s5 -> s6[label="ClientCertificateVerify / Empty"]
+	s5 -> s3[label="ApplicationData / Alert210ConnectionClosed"]
+	s6 -> s3[label="ClientHello / Alert220ConnectionClosed"]
+	s6 -> s3[label="ChangeCipherSpec / Alert210ConnectionClosed"]
+	s6 -> s7[label="Finished / NewSessionTicketNewSessionTicket"]
+	s6 -> s3[label="Certificate / Alert210ConnectionClosed"]
+	s6 -> s3[label="ClientCertificateVerify / Alert210ConnectionClosed"]
+	s6 -> s3[label="ApplicationData / Alert210ConnectionClosed"]
+	s7 -> s3[label="ClientHello / Alert210ConnectionClosed"]
+	s7 -> s3[label="ChangeCipherSpec / Alert210ConnectionClosed"]
+	s7 -> s3[label="Finished / Alert210ConnectionClosed"]
+	s7 -> s3[label="Certificate / Alert210ConnectionClosed"]
+	s7 -> s3[label="ClientCertificateVerify / Alert210ConnectionClosed"]
+	s7 -> s8[label="ApplicationData / Empty"]
+	s8 -> s3[label="ClientHello / Alert220ConnectionClosed"]
+	s8 -> s3[label="ChangeCipherSpec / Alert210ConnectionClosed"]
+	s8 -> s3[label="Finished / Alert210ConnectionClosed"]
+	s8 -> s3[label="Certificate / Alert210ConnectionClosed"]
+	s8 -> s3[label="ClientCertificateVerify / Alert210ConnectionClosed"]
+	s8 -> s8[label="ApplicationData / Empty"]
+
+__start0 -> s0;
+}
